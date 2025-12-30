@@ -1,0 +1,13 @@
+ALGORITMA Anahtar_Uret(parola)
+    key ← boş liste
+
+    FOR i ← 0 TO 7 DO
+        IF i < parola uzunluğu THEN
+            key[i] ← ASCII(parola[i]) mod 256
+        ELSE
+            key[i] ← (i × 17) mod 256
+        END IF
+    END FOR
+
+    DÖNDÜR key
+END
